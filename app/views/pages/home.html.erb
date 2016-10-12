@@ -1,14 +1,21 @@
 <h1>Cats</h1>
 <% @cats.each do |cat| %>
 <p><%= cat.name %></p>
+<p></p>
 <% end %>
 
 <h1>Users</h1>
 <% @users.each do |user| %>
 <p><%= user.username %></p>
+<p><%= user.email %></p>
+<p><%= user.age %></p>
+<p></p>
 <% end %>
 
 <h1>Todos</h1>
 <% @todos.each do |todo| %>
-<p><%= todo.completed %></p>
+<p><%= todo.id %></p>
+<p><%= todo.finished %></p>
+<p><%= todo.tasks %></p>
+<p></p>
 <% end %>
